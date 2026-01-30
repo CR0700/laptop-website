@@ -1,0 +1,378 @@
+# 📁 Projektstruktur
+
+```
+/website
+│── style.css
+│── index.html
+│── laptops-unter-600.html
+│── laptops-unter-800.html
+│── laptop-schueler.html
+│── about.html
+│── kontakt.html
+│── impressum.html
+│── datenschutz.html
+```
+
+---
+
+# 🎨 style.css
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #f5f5f5;
+  padding: 15px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+ul {
+  margin: 10px 0 20px 20px;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+```
+
+---
+
+# 🏠 index.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Kaufberatung Deutschland – Einfach erklärt</title>
+  <meta name="description" content="Einfache Laptop Kaufberatung. Klare Empfehlungen. Ideal für Alltag, Schule und Büro.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="laptops-unter-600.html">Unter 600€</a>
+    <a href="laptops-unter-800.html">Unter 800€</a>
+    <a href="laptop-schueler.html">Für Schüler</a>
+    <a href="about.html">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Laptop Kaufberatung</h1>
+  <p>Hier findest du einfache Laptop Empfehlungen.</p>
+  <p>Ohne Fachchinesisch. Kurz erklärt.</p>
+
+  <h2>Unsere beliebtesten Seiten</h2>
+  <ul>
+    <li><a href="laptops-unter-600.html">Laptops unter 600 Euro</a></li>
+    <li><a href="laptops-unter-800.html">Laptops unter 800 Euro</a></li>
+    <li><a href="laptop-schueler.html">Laptops für Schüler</a></li>
+  </ul>
+</main>
+
+<footer>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+</body>
+</html>
+```
+
+---
+
+# 💻 laptops-unter-600.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptops unter 600 Euro – Kaufberatung</title>
+  <meta name="description" content="Die besten Laptops unter 600 Euro. Einfacher Vergleich mit Empfehlung.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="laptops-unter-600.html">Unter 600€</a>
+    <a href="laptops-unter-800.html">Unter 800€</a>
+    <a href="laptop-schueler.html">Für Schüler</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Laptops unter 600 Euro</h1>
+  <p>Diese Geräte sind günstig und gut für Alltag.</p>
+
+  <h2>Vergleich</h2>
+  <table>
+    <tr>
+      <th>Modell</th>
+      <th>Display</th>
+      <th>Prozessor</th>
+      <th>Preis</th>
+    </tr>
+    <tr>
+      <td>Laptop A</td>
+      <td>15 Zoll</td>
+      <td>Intel i3</td>
+      <td>550 €</td>
+    </tr>
+  </table>
+
+  <h3>Vorteile</h3>
+  <ul>
+    <li>Günstig</li>
+    <li>Leise</li>
+  </ul>
+
+  <h3>Nachteile</h3>
+  <ul>
+    <li>Keine Spiele</li>
+    <li>Einfaches Display</li>
+  </ul>
+
+  <h2>Kaufempfehlung</h2>
+  <p>Sehr gut für Office und Internet.</p>
+  <p><strong>Amazon Link:</strong> HIER AFFILIATE LINK</p>
+</main>
+
+<footer>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+</body>
+</html>
+```
+
+---
+
+# 💻 laptops-unter-800.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptops unter 800 Euro – Empfehlung</title>
+  <meta name="description" content="Starke Laptops unter 800 Euro. Gute Leistung für Alltag und Arbeit.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="laptops-unter-600.html">Unter 600€</a>
+    <a href="laptops-unter-800.html">Unter 800€</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Laptops unter 800 Euro</h1>
+  <p>Mehr Leistung. Besseres Display.</p>
+
+  <table>
+    <tr><th>Modell</th><th>RAM</th><th>SSD</th><th>Preis</th></tr>
+    <tr><td>Laptop B</td><td>16 GB</td><td>512 GB</td><td>780 €</td></tr>
+  </table>
+
+  <h2>Empfehlung</h2>
+  <p>Sehr gut für Arbeit und Studium.</p>
+  <p>Amazon Link: HIER AFFILIATE LINK</p>
+</main>
+
+<footer>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+</body>
+</html>
+```
+
+---
+
+# 🎒 laptop-schueler.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptops für Schüler – Einfach erklärt</title>
+  <meta name="description" content="Die besten Laptops für Schüler. Robust und günstig.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="laptop-schueler.html">Für Schüler</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Laptops für Schüler</h1>
+  <p>Ideal für Hausaufgaben und Lernen.</p>
+
+  <ul>
+    <li>Leicht</li>
+    <li>Lange Akkulaufzeit</li>
+    <li>Günstig</li>
+  </ul>
+
+  <p>Amazon Link: HIER AFFILIATE LINK</p>
+</main>
+
+<footer>
+  <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+</footer>
+</body>
+</html>
+```
+
+---
+
+# ℹ️ about.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Über uns – Laptop Kaufhilfe</title>
+  <meta name="description" content="Wir helfen bei der Laptop Auswahl. Ehrlich und einfach.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav><a href="index.html">Start</a></nav></header>
+<main>
+<h1>Über uns</h1>
+<p>Wir lieben einfache Technik.</p>
+<p>Unsere Empfehlungen sind ehrlich.</p>
+</main>
+<footer><p><a href="impressum.html">Impressum</a></p></footer>
+</body>
+</html>
+```
+
+---
+
+# ✉️ kontakt.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<meta name="description" content="Kontakt zur Laptop Kaufberatung">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Kontakt</h1>
+<p>E-Mail: info@beispiel.de</p>
+</main>
+</body>
+</html>
+```
+
+---
+
+# ⚖️ impressum.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Impressum</title>
+<meta name="description" content="Impressum">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Impressum</h1>
+<p>Angaben gemäß §5 TMG</p>
+<p>Name<br>Adresse</p>
+</main>
+</body>
+</html>
+```
+
+---
+
+# 🔒 datenschutz.html
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Datenschutz</title>
+<meta name="description" content="Datenschutzerklärung">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Datenschutz</h1>
+<p>Diese Website speichert keine Daten.</p>
+</main>
+</body>
+</html>
+```
